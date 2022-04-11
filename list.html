@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>列表页</title>
+<meta name="keywords" content="">
+<meta name="description" content=" ">
+<!--主要样式-->
+<link rel="stylesheet" href="css/common.css">
+<!--mainjs-->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script>
+    var phoneWidth =  parseInt(window.screen.width);
+    var phoneScale = phoneWidth/750;
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)){
+        var version = parseFloat(RegExp.$1);
+        if(version>2.3){
+            document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+        }else{
+            document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+</script>
+</head>
+<body>
+<div id="wrapper">  
+    <!--菜单弹窗--> 
+    <div class="nav_box">
+        <div class="nav_box_main">
+            <div class="nav_top">
+                <div class="closed"><img src="images/nav_close.png"></div>
+            </div> 
+            <div class="nav_btn">
+                <div class="nav_link">
+                    <div class="link01"><a href="index.html">首页</a></div>
+                    <div class="link02"><a href="about.html">关于我们</a></div>
+                    <div class="link03"><a href="beitou.html">被投企业</a></div>
+                    <div class="link04 active"><a href="list.html">新闻动态</a></div>
+                    <div class="link05"><a href="contact.html">联系我们</a></div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    <!--头部-->
+    <div class="news_banner">
+        <div class="common_top">
+            <div class="common_logo"><a href="index.html"><img src="images/top_logo.png"></a></div>
+            <div class="common_nav_main">
+                <div class="menu" id="menu"><div class="zhong"><i></i><i></i><i></i><i></i> <i></i><i></i></div></div>
+            </div>
+        </div>
+        <div class="contact_text"><h1>新闻动态</h1></div>
+    </div>
+    <!--列表内容-->
+    <div class="news_container">
+        <a href="content.html" class="news_link">
+            <div class="news_light_blue">
+                <div class="news_light_blue_main news_main  wow fadeInUp animated"  data-wow-duration="2s" data-wow-delay="0" > 
+                    <h1>Pony.ai 小马智行完成 D 轮融资首次交割 | 昆仑资本 Portfolio</h1>
+                    <div class="links_more">
+                        <a class="links_btn links_hovercolor" href="content.html" target="_blank" rel="noopener">了解更多<i class="arrow-b arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="content.html" class="news_link_color">
+                <div class="news_dark_blue">
+                    <div class="news_dark_blue_main news_main wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0">
+                        <h1>Pony.ai 小马智行完成 D 轮融资首次交割 | 昆仑资本 Portfolio </h1>
+                    
+                        <div class="links_more">
+                            <a class="links_btn1 links_hovercolor1" href="content.html" target="_blank" rel="noopener">了解更多<i class="arrow-b1 arrow1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="content.html" class="news_link">
+                    <div class="news_light_blue">
+                        <div class="news_light_blue_main news_main wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0">
+                            <h1>Pony.ai 小马智行完成 D 轮融资首次交割 | 昆仑资本 Portfolio </h1>
+                        
+                            <div class="links_more">
+                                <a class="links_btn links_hovercolor" href="content.html" target="_blank" rel="noopener">了解更多<i class="arrow-b arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="content.html" class="news_link_color">
+                        <div class="news_dark_blue">
+                            <div class="news_dark_blue_main news_main wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0">
+                                <h1>Pony.ai 小马智行完成 D 轮融资首次交割 | 昆仑资本 Portfolio </h1>
+                            
+                                <div class="links_more">
+                                    <a class="links_btn1 links_hovercolor1" href="content.html" target="_blank" rel="noopener">了解更多<i class="arrow-b1 arrow1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+    </div>
+    <!--公共底部-->
+    <div class="footer_common">
+        <div class="footer_common_top">
+        <div class="footer_container footer_container1">
+            <div  class="footer_top_menu">
+                <ul>
+                    <li><a href="index.html">首 页 </a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="beitou.html">被投企业</a></li>
+                </ul>
+                <ul>
+                    <li><a href="list.html">新闻动态 </a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div  class="footer_top_logo"><img src="images/footer_logo.png"></div>
+            </div>
+        </div>
+        <div class="footer_common_bottom">
+            <div class="footer_container">
+                <div class="footer_tip">赣ICP备2021007615号-1</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主要js-->  
+<script src="js/qiehuan.js"></script>
+</body>
+</html>
