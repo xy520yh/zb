@@ -67,6 +67,8 @@ body{position:relative;-webkit-text-size-adjust:none;color:#fff;font-size:24px;}
 .nav_box_main{width:638px;margin:0 auto;}
 .common_top{height:109px;width:638px;margin:0 auto; position: relative;}
 .common_logo{position:absolute;left:0;top:26px;}
+.common_nav_main{width:200px;height:120px;position:absolute;right:0;top:0px; padding-top: 50px;} 
+
 .common_nav_main .menu i{display:block;width:100%;height:4px;background:#fff;}
 .common_nav_main .menu i:nth-child(1),.common_nav_main .menu i:nth-child(2){position:absolute;top:0;left:0;transition:transform .5s .2s;}
 .common_nav_main .menu i:nth-child(3),.common_nav_main .menu i:nth-child(4){position:absolute;top:50%;left:-5px;transition:transform 1.5s .1s;margin-top:-2px;}
@@ -74,7 +76,7 @@ body{position:relative;-webkit-text-size-adjust:none;color:#fff;font-size:24px;}
 .common_nav_main .menu i:nth-child(2),.common_nav_main .menu i:nth-child(4),.nav .menu i:nth-child(6){transform:translateX(-50px)}
 .common_nav_main.active .menu i:nth-child(1),.common_nav_main.active .menu i:nth-child(3),.common_nav_main.active .menu i:nth-child(5){transform:translateX(50px)}
 .common_nav_main.active .menu i:nth-child(2),.common_nav_main.active .menu i:nth-child(4),.common_nav_main.active .menu i:nth-child(6){transform:translateX(0px)}
-.common_nav_main .menu{width:50px;height:30px;cursor:pointer;position:absolute;right:0;top:50px;padding-left:10px;overflow:hidden;}
+.common_nav_main .menu{width:50px;height:30px;cursor:pointer;padding-left:10px;overflow:hidden;position:absolute;right:0;top:50px;}
 .zhong{width:38px;height:30px;padding-left:20px;position:relative;}
 .common_header{position:fixed;top:0;left:0;right:0;width:100%;padding:24px 0;z-index:110;-webkit-transition:all .5s;transition:all .5s;}
 /*公共底部*/

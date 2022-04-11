@@ -17,7 +17,7 @@
 //   storeScroll();
 
 
-$('body').on("click", ".menu", function () {
+$('body').on("click", ".common_nav_main", function () {
   $(this).parent('.common_nav_main').toggleClass('active');
   $('.nav_box').toggleClass('active');
 });
