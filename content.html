@@ -1,107 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>内容页</title>
-<meta name="keywords" content="">
-<meta name="description" content=" ">
-<!--主要样式-->
-<link rel="stylesheet" href="css/common.css">
-<!--mainjs-->
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script>
-    var phoneWidth =  parseInt(window.screen.width);
-    var phoneScale = phoneWidth/750;
-    var ua = navigator.userAgent;
-    if (/Android (\d+\.\d+)/.test(ua)){
-        var version = parseFloat(RegExp.$1);
-        if(version>2.3){
-            document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-        }else{
-            document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
-        }
-    } else {
-        document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
-    }
-</script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <title>预注册手机端内容页</title>
+    <meta name="Keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="css/pre_main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="wrapper">  
-    <!--菜单弹窗--> 
-    <div class="nav_box">
-        <div class="nav_box_main">
-            <div class="nav_top">
-                <div class="closed"><img src="images/nav_close.png"></div>
-            </div> 
-            <div class="nav_btn">
-                <div class="nav_link">
-                    <div class="link01"><a href="index.html">首页</a></div>
-                    <div class="link02"><a href="about.html">关于我们</a></div>
-                    <div class="link03"><a href="beitou.html">被投企业</a></div>
-                    <div class="link04 active"><a href="list.html">新闻动态</a></div>
-                    <div class="link05"><a href="contact.html">联系我们</a></div>
-                </div>
-            
+
+<body>
+  <div class="wraper">
+    <div class="content_box">
+       	<div class="pre_main">
+        	<h3><img src="images/pre_content_head_03.png"></h3>
+      	    <div class="pre_content">
+                <p class="tx">ご登録ありがとうございます。</p>
+                <p class="tx">登録したメールアドレスに確認メールを送信させて頂きました、ご確認お願いします。</p>
+                <p class="tx">また、サービス開始日を後日メールにてご案内致しますので、今しばらくお待ち頂ければ幸いです。</p>
+                <p class="tx">※何分経っても確認メールが届かない場合、「迷惑メール」に振り込まれている可能性もございます。それでも届かない場合、メールアドレスをご確認の上、正しいメールアドレスで再登録してください。</p>
+                <h4 class="line_h"></h4>
+                <p style="text-align:center;">ゲーム＆プレゼントキャンペーン情報順次更新中</p>
+                <h3 class="center1"><img src="images/pre_content_img_03.jpg"></h3>
             </div>
-            
         </div>
+		<div class="fixed_bottom  valign">
+			<img src="images/twitter.png" id="twitter_icon" class="twitter">
+			<div class="line"></div> <a href="#" target="_blank"><img src="images/youtube.png" alt="" class="youtbe"></a>
+			<div class="line"></div> <a href="#" target="_blank"><img src="images/line.png" alt="" class="line1"></a>
+		</div>
+		<div class="fixed_right">
+		  <div class="nav active">
+			<div class="menu" id="menu"><i></i><i></i><i></i><i></i> <i></i><i></i></div>
+		  </div>
+		</div>
+		<div class="nav_box">            
+			<div class="nav_btn">
+				<div class="link04"><a href="index.html#index_slide1">TOP</a></div>
+				<div><a href="news.html">NEWS</a></div>
+				<div><a href="world.html">WORLD</a></div>
+				<div><a href="system.html">SYSTEM</a></div>
+				<div><a href="special.html">SPECIAL</a></div>
+				<div class="closed"><img src="images/close.png"></div>
+
+			</div>
+		</div>
+		<div class="kefu_box">
+		  <div class="title bb valign-between">
+			<p></p>
+			<div class="closed"><img src="images/close.png" alt=""></div>
+		  </div>
+		  <div class="note">
+			<p>お問い合わせする内容をご記入の上、<br>下記のメールアドレスまでご連絡ください。</p>
+			<p class="pb">サポート：<a href="mailto:illusion@efunjp.com" target="_blank">illusion@efunjp.com</a></p>
+		  </div>
+		</div>
+		<div class="twitter_box">
+		  <div class="title valign-between">
+			<p></p>
+			<div class="closed"><img src="images/close.png" alt=""></div>
+		  </div>
+		  <div>
+			<div class="title">Twitter <span>@iryu_cone</span></div>
+			<textarea name="" id="twitter_text" cols="30" rows="10"></textarea>
+		  </div>
+		  <div class="valign-between">
+			<p></p><button class="follow" id='twitter_btn'>follow</button>
+		  </div>
+		</div>
     </div>
-    <!--头部-->
-    <div class="news_banner">
-        <div class="common_top">
-            <div class="common_logo"><a href="index.html"><img src="images/top_logo.png"></a></div>
-            <div class="common_nav_main">
-                <div class="menu" id="menu"><div class="zhong"><i></i><i></i><i></i><i></i> <i></i><i></i></div></div>
-            </div>
-        </div>
-        <div class="contact_text"><h1>新闻动态</h1></div>
-    </div>
-    <div class="content_wrap">
-        <div class="content_main">
-                <div class="content_title">
-                    <h2>Pony.ai 小马智行完成 D 轮 融资首次交割 | 昆仑资本  Portfolio</h2>
-                    <!-- <h3 class="title1">昆仑资本   2022-03-07 </P> -->
-                </div>
-                <div class="content_text">
-                    <P>3月7日，Pony.ai小马智行宣布完成D轮融资的首次交割，整体估值达85亿美元，体现了投资方对于公司发展的认可。此前，昆仑资本于2019年4月对小马智行进行了5000万美元投资。</P>
-                    <P>去年2月完成C轮融资以来，小马智行在自动驾驶出行服务（Robotaxi）与智慧物流领域取得多个技术和商业化里程碑。本轮融资资金将用于团队扩充、技术研发、Robotaxi及自动驾驶卡车（Robotruck）车队规模扩大及全球测试与运营、自动驾驶技术量产以及商业化部署等业务领域。</P>
-                    <h3 style="text-align:center;"><img src="images/content_img.jpg"></h3>
-                    <P>小马智行联合创始人兼CEO彭军表示“很高兴宣布融资的好消息。本轮融资顺利结束，小马智行整个团队功不可没。在大家的努力下，小马智行在2021年达成了众多里程碑。对于2022年，我们同样满怀信心，将在全球范围内快速推进自动驾驶技术的发展。我们的技术实力以及稳健的财务实力将继续推动公司各项业务：我们将进一步扩大团队规模；在全球范围内开启全新的测试运营中心；全方位推进战略合作以及扩充自动驾驶车队规模。感谢过往投资方对小马智行的一贯支持，同时也欢迎新合作伙伴的到来，共同书写小马智行的全球故事。”</P>
-                    <P>小马智行联合创始人兼CTO楼天城表示：“技术实力是我们得到投资者支持的关键因素。过去的两年中，我们的核心技术指标大幅提升，大多数场景中，小马智行‘虚拟司机’可以媲美甚至超越人类司机。对于技术发展进程，我们信心满满，小马智行正迅速推进乘用车和商用车领域的自动驾驶商业化进程和量产化落地。”</P>
-                    <div class="links">
-                        <a class="btn hovercolor" href="#">更多新闻<i class="arrow-b arrow"></i></a>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <!--公共底部-->
-    <div class="footer_common">
-        <div class="footer_common_top">
-        <div class="footer_container footer_container1">
-            <div  class="footer_top_menu">
-                <ul>
-                    <li><a href="index.html">首 页 </a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="beitou.html">被投企业</a></li>
-                </ul>
-                <ul>
-                    <li><a href="list.html">新闻动态 </a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                </ul>
-            </div>
-            <div  class="footer_top_logo"><img src="images/footer_logo.png"></div>
-            </div>
-        </div>
-        <div class="footer_common_bottom">
-            <div class="footer_container">
-                <div class="footer_tip">赣ICP备2021007615号-1</div>
-            </div>
-        </div>
-    </div>
+  </div>
+  <div class="bottom_bg">
+	<div class="main_bottom">
+	<div class="bottom_top">
+  <img src="images/icon.png" class="icon">
+  <div class="text1">
+    <p>タイトル　イリュージョンコネクト</p>
+    <p>ジャンル　夢と現実を繋ぐタクティカルRP</p>
+    <p>価　　格　基本プレイ無料</p>
+    <p>対応端末　Android/iOS</p>
+  </div>
+  </div>
+  <div class="text2">
+    <p><a href="policy.html">プライバシーポリシー</a></p>
+    <p class="kefu_icon hand">お問い合わせ</p>
+    <p>運営会社</p>
+  </div>
+  <div class="copy">©Efun Company Limited</div>
+  </div>
 </div>
-<!--主要js-->  
-<script src="js/qiehuan.js"></script>
+	<script type="text/javascript"  src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/pre_index.js"></script>
 </body>
 </html>

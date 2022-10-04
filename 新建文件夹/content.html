@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>内容页</title>
+<meta name="keywords" content="">
+<meta name="description" content=" ">
+<!--主要样式-->
+<link rel="stylesheet" href="css/common.css">
+<!--mainjs-->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script>
+    var phoneWidth =  parseInt(window.screen.width);
+    var phoneScale = phoneWidth/750;
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)){
+        var version = parseFloat(RegExp.$1);
+        if(version>2.3){
+            document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+        }else{
+            document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+</script>
+</head>
+<body>
+<div id="wrapper">  
+    <!--菜单弹窗--> 
+    <div class="nav_box">
+        <div class="nav_box_main">
+            <div class="nav_top">
+                <div class="closed"><img src="images/nav_close.png"></div>
+            </div> 
+            <div class="nav_btn">
+                <div class="nav_link">
+                    <div class="link01"><a href="index.html">首页</a></div>
+                    <div class="link02"><a href="about.html">关于我们</a></div>
+                    <div class="link03"><a href="beitou.html">被投企业</a></div>
+                    <div class="link04 active"><a href="list.html">新闻动态</a></div>
+                    <div class="link05"><a href="contact.html">联系我们</a></div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    <!--头部-->
+    <div class="news_banner">
+        <div class="common_top">
+            <div class="common_logo"><a href="index.html"><img src="images/top_logo.png"></a></div>
+            <div class="common_nav_main">
+                <div class="menu" id="menu"><div class="zhong"><i></i><i></i><i></i><i></i> <i></i><i></i></div></div>
+            </div>
+        </div>
+        <div class="contact_text"><h1>新闻动态</h1></div>
+    </div>
+    <div class="content_wrap">
+        <div class="content_main">
+                <div class="content_title">
+                    <h2>Pony.ai 小马智行完成 D 轮 融资首次交割 | 昆仑资本  Portfolio</h2>
+                    <!-- <h3 class="title1">昆仑资本   2022-03-07 </P> -->
+                </div>
+                <div class="content_text">
+                    <P>3月7日，Pony.ai小马智行宣布完成D轮融资的首次交割，整体估值达85亿美元，体现了投资方对于公司发展的认可。此前，昆仑资本于2019年4月对小马智行进行了5000万美元投资。</P>
+                    <P>去年2月完成C轮融资以来，小马智行在自动驾驶出行服务（Robotaxi）与智慧物流领域取得多个技术和商业化里程碑。本轮融资资金将用于团队扩充、技术研发、Robotaxi及自动驾驶卡车（Robotruck）车队规模扩大及全球测试与运营、自动驾驶技术量产以及商业化部署等业务领域。</P>
+                    <h3 style="text-align:center;"><img src="images/content_img.jpg"></h3>
+                    <P>小马智行联合创始人兼CEO彭军表示“很高兴宣布融资的好消息。本轮融资顺利结束，小马智行整个团队功不可没。在大家的努力下，小马智行在2021年达成了众多里程碑。对于2022年，我们同样满怀信心，将在全球范围内快速推进自动驾驶技术的发展。我们的技术实力以及稳健的财务实力将继续推动公司各项业务：我们将进一步扩大团队规模；在全球范围内开启全新的测试运营中心；全方位推进战略合作以及扩充自动驾驶车队规模。感谢过往投资方对小马智行的一贯支持，同时也欢迎新合作伙伴的到来，共同书写小马智行的全球故事。”</P>
+                    <P>小马智行联合创始人兼CTO楼天城表示：“技术实力是我们得到投资者支持的关键因素。过去的两年中，我们的核心技术指标大幅提升，大多数场景中，小马智行‘虚拟司机’可以媲美甚至超越人类司机。对于技术发展进程，我们信心满满，小马智行正迅速推进乘用车和商用车领域的自动驾驶商业化进程和量产化落地。”</P>
+                    <div class="links">
+                        <a class="btn hovercolor" href="#">更多新闻<i class="arrow-b arrow"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--公共底部-->
+    <div class="footer_common">
+        <div class="footer_common_top">
+        <div class="footer_container footer_container1">
+            <div  class="footer_top_menu">
+                <ul>
+                    <li><a href="index.html">首 页 </a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="beitou.html">被投企业</a></li>
+                </ul>
+                <ul>
+                    <li><a href="list.html">新闻动态 </a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div  class="footer_top_logo"><img src="images/footer_logo.png"></div>
+            </div>
+        </div>
+        <div class="footer_common_bottom">
+            <div class="footer_container">
+                <div class="footer_tip">赣ICP备2021007615号-1</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主要js-->  
+<script src="js/qiehuan.js"></script>
+</body>
+</html>

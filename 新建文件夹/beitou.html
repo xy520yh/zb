@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>被投企业</title>
+<meta name="keywords" content="">
+<meta name="description" content=" ">
+<!--主要样式-->
+<link rel="stylesheet" href="css/common.css">
+<!--mainjs-->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script>
+    var phoneWidth =  parseInt(window.screen.width);
+    var phoneScale = phoneWidth/750;
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)){
+        var version = parseFloat(RegExp.$1);
+        if(version>2.3){
+            document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+        }else{
+            document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+</script>
+</head>
+<body>
+    <div id="wrapper">  
+    <!--菜单弹窗--> 
+    <div class="nav_box">
+        <div class="nav_box_main">
+            <div class="nav_top">
+                <div class="closed"><img src="images/nav_close.png"></div>
+            </div> 
+            <div class="nav_btn">
+                <div class="nav_link">
+                    <div class="link01"><a href="index.html">首页</a></div>
+                    <div class="link02"><a href="about.html">关于我们</a></div>
+                    <div class="link03 active"><a href="beitou.html">被投企业</a></div>
+                    <div class="link04"><a href="list.html">新闻动态</a></div>
+                    <div class="link05"><a href="contact.html">联系我们</a></div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    <!--头部-->
+    <div class="beitou_banner">
+        <div class="common_top">
+            <div class="common_logo"><a href="index.html"><img src="images/top_logo.png"></a></div>
+            <div class="common_nav_main">
+                <div class="menu" id="menu"><div class="zhong"><i></i><i></i><i></i><i></i> <i></i><i></i></div></div>
+            </div>
+        </div>
+        <div class="beitou_number">
+            <div class="margin_b">
+                <div class="numbers">
+                    
+                    <div class="num-icon">
+                        <i><img src="images/beitou_number_img_01.png"></i>
+                    </div>
+                    <div class="num-content counter-block">
+                        <h4 class="num-heading counter-title"><span class="accent count-number" >10</span>+</h4>
+                    </div>
+                    <!-- <div class="">
+                        <div class=""> <span class="count-number">972</span><span class="count-number">972</span> +</div>
+                    </div> -->
+                </div>
+                <div class="numbers">
+                    <div class="num-icon">
+                        <i><img src="images/beitou_number_img_02.png"></i>
+                    </div>
+                    <div class="num-content counter-block">
+                        <h4 class="num-heading counter-title"><span class="accent count-number" >16</span>+</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="margin_b">
+                <div class="numbers">
+                    <div class="num-icon">
+                        <i><img src="images/beitou_number_img_03.png"></i>
+                    </div>
+                    <div class="num-content counter-block">
+                        <h4 class="num-heading counter-title"><span class="accent count-number" >8</span>+</h4>
+                    </div>
+                </div>
+                <div class="numbers">
+                    <div class="num-icon">
+                        <i><img src="images/beitou_number_img_04.png"></i>
+                    </div>
+                    <div class="num-content counter-block">
+                        <h4 class="num-heading counter-title"><span class="accent count-number" >9</span>+</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--被投企业-->
+    <div id="new_box">
+        <div class="title_cn">
+           <h1>被投企业</h1>
+        </div>
+        <div class="new_con">
+            <div class="newtel">
+                <ul class="new_telst">
+                    <li class="">硬科技</li>
+                    <li class="newon">生物医药</li>
+                    <li class="">企业服务</li>
+                    <li class="" style="margin-right: 0px;">消费互联网</li>
+                    <p style="width:120px; left:130px;">
+                        <b></b>
+                    </p>
+                </ul>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="new-wrap">
+                <!--案例1-->
+                <div class="new_lst show" style="display:none;">
+                    <ul>
+						<li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(1).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(2).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(3).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(4).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(5).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(6).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(7).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(8).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(9).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_ykj_img-(10).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                  
+						
+					</ul>
+                </div>
+                <!--案例2-->
+                <div class="new_lst" style="display: block;">
+                    <ul>
+						<li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(1).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(2).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(3).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(4).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(5).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(6).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(7).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(8).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(9).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(10).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(11).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(12).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(13).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(14).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(15).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_swyl_img-(16).png" alt="" /><span></span><i></i></div></a>
+						</li>
+
+						
+					</ul>
+                </div>
+                <!--案例3-->
+                <div class="new_lst" style="display: none;">
+                    <ul>
+						<li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(1).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(2).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(3).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(4).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(5).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(6).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(7).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_qyfw_img-(8).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                     
+						
+					</ul>
+                </div>
+                <div class="new_lst" style="display: none;">
+                    <ul>
+						<li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(1).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(2).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(3).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(4).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(5).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(6).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(7).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(8).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li class="hover_link">
+                            <a href="#" target="_blank"><div><img src="images/beitou_xf_img-(9).png" alt="" /><span></span><i></i></div></a>
+						</li>
+                        <li >
+                            
+						</li>
+                  
+						
+					</ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="investor_business">
+        <div class="investor_business_container">
+            <div class="investor_business_left">
+                <h2>专注科技创新型企业投资</h2>
+            </div>
+            <div class="investor_business_link">
+                <a href="#">MORE</a>
+            </div>
+        </div>
+    </div>
+    <!--公共底部-->
+    <div class="footer_common">
+        <div class="footer_common_top">
+        <div class="footer_container footer_container1">
+            <div  class="footer_top_menu">
+                <ul>
+                    <li><a href="index.html">首 页 </a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="beitou.html">被投企业</a></li>
+                </ul>
+                <ul>
+                    <li><a href="list.html">新闻动态 </a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div  class="footer_top_logo"><img src="images/footer_logo.png"></div>
+            </div>
+        </div>
+        <div class="footer_common_bottom">
+            <div class="footer_container">
+                <div class="footer_tip">赣ICP备2021007615号-1</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--主要js-->  
+<script type="text/javascript" src="js/placeholdem.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/count-to.js"></script>
+<script src="js/count.js"></script>
+<script src="js/qiehuan.js"></script>
+<script type="text/javascript">           
+          //设计案例切换
+        $('.new_telst li').mouseover(function(){
+            var liindex = $('.new_telst li').index(this);
+            var index = $(this).index();
+            $(this).addClass('newon').siblings().removeClass('newon');
+            $('.new-wrap div.new_lst').eq(liindex).fadeIn(150).siblings('div.new_lst').hide();
+            var liWidth = $('.new_telst li').eq(index).width();
+            
+            var parent = $(this).parents('.new_telst');
+            var _this = parent.find('li').eq(index);
+            console.log(_this)
+            var _l = _this[0].offsetLeft;
+            // $('.newtel .new_telst p').stop(false,true).animate({'left' : liindex * liWidth + 'px'},300);
+          $('.newtel .new_telst p').css({ 'width': liWidth, 'left': _l })
+
+            
+        });
+    </script>
+</body>
+</html>

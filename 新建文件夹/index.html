@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <!--maincss-->
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/animate.css"    type="text/css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" />
+     <!--mainjs-->
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+    <script>
+        var phoneWidth =  parseInt(window.screen.width);
+		var phoneScale = phoneWidth/750;
+		var ua = navigator.userAgent;
+		if (/Android (\d+\.\d+)/.test(ua)){
+			var version = parseFloat(RegExp.$1);
+			if(version>2.3){
+				document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+			}else{
+				document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+			}
+		} else {
+			document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+
+    </script>
+</head>
+<body>
+  <!--菜单弹窗--> 
+  <div class="nav_box">
+    <div class="nav_box_main">
+        <div class="nav_top">
+            <div class="closed"><img src="images/nav_close.png"></div>
+        </div> 
+        <div class="nav_btn">
+            <div class="nav_link">
+                <div class="link01 active"><a href="index.html">首页</a></div>
+                <div class="link02"><a href="about.html">关于我们</a></div>
+                <div class="link03"><a href="beitou.html">被投企业</a></div>
+                <div class="link04"><a href="list.html">新闻动态</a></div>
+                <div class="link05"><a href="contact.html">联系我们</a></div>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+    <!--头部-->
+    <div class="common_header">
+        <div class="common_top">
+            <div class="common_logo"><a href="index.html"><img src="images/top_logo.png"></a></div>
+            <div class="common_nav_main">
+                <div class="menu" id="menu"><div class="zhong"><i></i><i></i><i></i><i></i> <i></i><i></i></div></div>
+            </div>
+        </div>
+    </div>
+<div class="banner">
+    <div class="bg">
+        <div class="swiper-container home-swiper" >
+            <div class="swiper-wrapper">
+               
+                <div id="swiper1" class="swiper-slide" style="background-image:url(images/banner1.jpg);background-size: cover;">
+                    <a href="http://www.kunlun-cap.com/" target="_blank">
+                   <!-- <video x5-video-player-type="h5-page" x5-playsinline="true" webkit-playsinline playsinline muted autoplay loop class="bgvideo video" poster="images/banner1.jpg">
+                     <source src="media/banner1.mp4" type="video/mp4">
+                    </video> -->
+                    <div class="content">
+                        <div class="container">
+                            <div class="hero">
+                                <div class="title">昆仑资本</div>
+                                <div class="info">专注科技创新型企业投资   </div>
+                                <div class="links"><img src="images/more_03.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+         
+                <div id="swiper2" class="swiper-slide" style="background-image:url(images/banner2.jpg);background-size: cover;">
+                    <a href="https://www.imdada.cn/" target="_blank">
+                    <div class="content">
+                        <div class="container">
+                            <div class="hero">
+                                <div class="title_logo"><img src="images/logo_dada_02.png"></div>
+                                <div class="info_fz50">本地即时零售和配送平台<br/><span>2022年6月5日,纳斯达克挂牌上市</span></div>
+                                <div class="links"><img src="images/more_03.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div id="swiper3" class="swiper-slide" style="background-image:url(images/banner3.jpg);background-size: cover;">
+                    <a href="https://www.inke.cn/index.html" target="_blank">
+                    <div class="content" style="margin-top: 10px;">
+                        <div class="container">
+                            <div class="hero">
+                                <div class="title_logo"><img src="images/logo_yk_03.png"></div>
+                                <div class="info_fz50">中国领先的互动娱乐平台<br/><span>2018年7月12日，港交所挂牌上市</span></div>
+                                <div class="links"><img src="images/more_03.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div id="swiper4" class="swiper-slide" style="background-image:url(images/banner4.jpg);background-size: cover;">
+                    <a href="http://www.kunlun-cap.com/" target="_blank">
+                    <div class="content">
+                        <div class="container">
+                            <div class="hero">
+                                <div class="title_logo"><img src="images/logo_dream_04.png"></div>
+                                <div class="info_fz50">创新科技公司</div>
+                                <div class="links"><img src="images/more_03.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div id="swiper5" class="swiper-slide" style="background-image:url(images/banner5.jpg);background-size: cover;">
+                    <a href="http://www.kunlun-cap.com/" target="_blank">
+                    <div class="content">
+                        <div class="container">
+                            <div class="hero">
+                                <div class="title_logo"><img src="images/logo_ibm_05.png"></div>
+                                <div class="info_fz50">IAM身份管理行业领先企业</div>
+                                <div class="links"><img src="images/more_03.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div id="swiper6" class="swiper-slide" style="background-image:url(images/banner6.jpg);background-size: cover;">
+                    <a href="http://www.kunlun-cap.com/" target="_blank">
+                    <div class="content">
+                        <div class="container">
+                            <div class="hero">
+                                <div class="title_logo"><img src="images/logo_boya_06.png"></div>
+                                <div class="info_fz33">基因组编辑技术转化和创新疗法开发引领者</div>
+                                <div class="links"><img src="images/more_03.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+    <script type='text/javascript' src='js/script.js' id='script-js'></script>
+    <script type='text/javascript'  src="js/qiehuan.js"></script>
+</body>
+</html>
+
+
