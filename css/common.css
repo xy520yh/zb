@@ -38,6 +38,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%;overf
 .main_show{position:absolute;top:0;bottom:0;width:100%;height:100%;background:url(../images/phone_part01.jpg) no-repeat;background-size:cover;}
 
 .part1_header{background:rgba(23,12,12,0.88);height:1.35rem; position: absolute; top:0;left:0;width:100%;display: flex; justify-content: center; align-items: center;}
+.header_icon{height:1.08rem;}
 .header_icon img{width:2.86rem;height:1.08rem;margin-right: 0.9rem;}
 .header_btn_small img{width:3.46rem;height:1.05rem;
   -webkit-animation: arrowAn 0.8s linear infinite alternate;	-moz-animation: arrowAn 0.8s linear infinite alternate;	animation: arrowAn 0.8s linear infinite alternate;
