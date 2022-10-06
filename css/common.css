@@ -43,13 +43,13 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%;overf
   -webkit-animation: arrowAn 0.8s linear infinite alternate;	-moz-animation: arrowAn 0.8s linear infinite alternate;	animation: arrowAn 0.8s linear infinite alternate;
 }
 
-.part1_logo{position: absolute; top:1rem;width:3.11rem;left:50%;margin-left:-1.55rem;
+.part1_logo{position: absolute; top:1.2rem;width:3.11rem;left:50%;margin-left:-1.55rem;
   --animate-duration: 1s;
   --animate-delay: 0s;}
 .part1_logo img{width:3.11rem;height:2.63rem;}
 
 .part1_center{position: absolute;width:7.5rem;display: flex; justify-content: center;left:0;bottom:2.18rem;flex-direction: column;}
-.part1_solgen{width:7.5rem;margin-bottom:0.8rem;
+.part1_solgen{width:7.5rem;margin-bottom:0.5rem;
   --animate-duration: 2s;
   --animate-delay: 0.4s;}
 .part1_solgen  img{width:7.5rem;height:1.08rem;}
@@ -65,7 +65,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%;overf
   --animate-delay: 0.8s;}
 .part1_btn  img{width:7.5rem;height: 1.24rem;-webkit-animation: magnify .6s linear infinite alternate;	-moz-animation: magnify .6s linear infinite alternate;	animation: magnify .6s linear infinite alternate;}
 .part1_footer{position:absolute;left:0;width:7.5rem;display: flex; justify-content: center;bottom:0rem;}
-.part1_footer img{width:7.5rem;height:0.35rem;}
+.part1_footer img{width:7.5rem;height:0.51rem;}
 .bg-video{width:100%;height:100vh;display:block;object-fit:cover;position:absolute;top:0;left:0;}
 
 
